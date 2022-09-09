@@ -21,7 +21,42 @@
     <p>
       <img src="img/triangle-vertices.PNG" alt="Triangle Image" width="400" />
     </p>
-
     <hr />
+    <p>
+      Enter the vertices of a triangle and click "Calculate" to determine the
+      side lengths and perimeter of the triangle.
+    </p>
+
+    <div class="vertexInput">
+      <p class="vertexLabel"><b>Vertex A</b> -</p>
+      <label for="xA">xA: </label>
+      <input id="xA" />
+      <label for="yA">yA: </label>
+      <input id="yA" />
+    </div>
+
+    <div class="vertexInput">
+      <p class="vertexLabel"><b>Vertex B</b> -</p>
+      <label for="xB">xB: </label>
+      <input id="xB" />
+      <label for="yB">yB: </label>
+      <input id="yB" />
+    </div>
+
+    <div class="vertexInput">
+      <p class="vertexLabel"><b>Vertex C</b> -</p>
+      <label for="xC">xC: </label>
+      <input id="xC" />
+      <label for="yC">yC: </label>
+      <input id="yC" />
+    </div>
+    <hr />
+
+    <button id="calcBtn">CALCULATE</button>
+    <br />
+    <p>AB = <span id="abOutput"></span></p>
+    <p>AC = <span id="acOutput"></span></p>
+    <p>BC = <span id="bcOutput"></span></p>
+    <p>Perimeter of ABC = <span class="perimOutput"></span></p>
   </body>
 </html>
